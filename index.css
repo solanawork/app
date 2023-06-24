@@ -72,3 +72,14 @@ ul li:hover {
     cursor: pointer;
 }
 */
+
+#add-button {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+#add-button:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }

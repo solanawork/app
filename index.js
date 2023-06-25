@@ -12,7 +12,7 @@ const shoppingListInDB = ref(database, "shoppingList")
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
 const shoppingListEl = document.getElementById("shopping-list")
-const getItemBackBtnEl = document.getElementById("getItemBack")
+const getItemBackBtnEl = document.getElementById("get-item-back")
 
 let lastItemRemoved = ""
 
@@ -86,3 +86,4 @@ getItemBackBtnEl.addEventListener("click", function() {
         push(shoppingListInDB, lastItemRemoved)
         lastItemRemoved = ""}
 })
+

@@ -1,48 +1,61 @@
-
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik', sans-serif;
-    background-color: #3a98c7;
-    color: #000000;
-    user-select: none;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #3a98c7;
+  color: #000000;
+  user-select: none;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 320px;
-    margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 30px auto;
 }
 
 img {
-    width: 150px;
-    margin: 0 auto;
+  width: 150px;
+  margin: 0 auto;
 }
 
 input {
-    color: #000000;
-    background-color: #DCE1EB;
-    border: 0;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    margin: 10px 0;
+  color: #000000;
+  background-color: #dce1eb;
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
 }
 
 button {
-    color: #000000;
-    background-color: #13d484;
-    border: 0;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    
+  color: #000000;
+  background-color: #13d484;
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  background-position: center;
+  transition: background 0.8s;
+  margin-top: 10px;
 }
+
+button:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+#get-item-back {
+    width: 75px;
+    align-self: center;
+}
+
 /*
 button:hover {
     background-color: #0bd537;
@@ -50,21 +63,21 @@ button:hover {
 }
 */
 ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 ul li {
-    font-size: 20px;
-    background-color: #cf9911;
-    padding: 15px;
-    border-radius: 8px;
-    flex-grow: 1;
-    text-align: center;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  background-color: #cf9911;
+  padding: 15px;
+  border-radius: 8px;
+  flex-grow: 1;
+  text-align: center;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 }
 /*
 ul li:hover {
@@ -72,14 +85,3 @@ ul li:hover {
     cursor: pointer;
 }
 */
-
-#add-button {
-    background-position: center;
-    transition: background 0.8s;
-}
-
-#add-button:active {
-    background-color: #6eb9f7;
-    background-size: 100%;
-    transition: background 0s;
-  }

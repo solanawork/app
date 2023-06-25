@@ -12,6 +12,9 @@ const shoppingListInDB = ref(database, "shoppingList")
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
 const shoppingListEl = document.getElementById("shopping-list")
+const getItemBackBtnEl = document.getElementById("getItemBack")
+
+let lastItemRemoved = ""
 
 
 
@@ -64,9 +67,23 @@ function appendItemToShoppingListEl(item) {
     
     newEl.addEventListener("dblclick", function() {
         let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`)
-        
         remove(exactLocationOfItemInDB)
+        lastItemRemoved = itemValue
+        
+
     })
     
     shoppingListEl.append(newEl)
+}
+
+// function to append the last item removed
+getItemBackBtnEl.addEventListener("click", function() {
+
+    if (lastItemRemoved === "") {
+
+    } else {
+        
+        push(shoppingListInDB, lastItemRemoved)
+        lastItemRemoved = ""}
+})
 }

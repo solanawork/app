@@ -86,4 +86,3 @@ getItemBackBtnEl.addEventListener("click", function() {
         push(shoppingListInDB, lastItemRemoved)
         lastItemRemoved = ""}
 })
-}
